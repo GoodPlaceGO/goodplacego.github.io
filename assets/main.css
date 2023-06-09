@@ -1,0 +1,102 @@
+@font-face {
+    font-family: UbuntuCondensed;
+    /* Имя шрифта */
+    src: url(./fonts/UbuntuCondensed-Regular.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Montserrat;
+    /* Имя шрифта */
+    src: url(./fonts/Montserrat/Montserrat-Regular.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: McReg;
+    src: url(./fonts/MinecraftRegular-Bmg3.otf);
+}
+@font-face {
+    font-family: mc;
+    src: url(./fonts/mc.ttf);
+}
+body {
+    background: url(./mc.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* #main-block,
+#sec-block {
+  border-radius: 0 10px !important;
+} */
+.servers {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; */
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    margin: 10px;
+    /* padding: 10px; */
+    /* border: 5px red outset; */
+    /* border-radius: 25% 10% ; */
+    /* border-radius: 50% 20% / 10% 40%; */
+}
+
+#wallets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.server-block1 {
+    border-radius: 50% 20% / 10% 40%;
+    /* border-radius: inherit; */
+
+    padding: 10%;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 9, 121, 1) 25%,
+            rgba(223, 209, 14, 1) 74%,
+            rgba(0, 212, 255, 1) 100%);
+}
+
+.server-block2 {
+    /* border-radius: 50% 20% / 10% 40%; */
+    /* border-radius: inherit; */
+    border-radius: 10% 40% / 50% 20%;
+
+    padding: 10%;
+    /*50px*/
+
+    background: rgb(133, 222, 7);
+    background: linear-gradient(90deg,
+            rgba(133, 222, 7, 1) 0%,
+            rgba(9, 121, 36, 1) 25%,
+            rgba(223, 209, 14, 1) 74%,
+            rgba(0, 255, 185, 1) 100%);
+
+    /* background: rgb(133, 222, 7);
+    background: radial-gradient(circle, rgba(133, 222, 7, 1) 0%, rgba(9, 121, 36, 1) 25%, rgba(223, 209, 14, 1) 74%, rgba(0, 255, 185, 1) 100%); */
+}
+
+.mini-games {
+    padding: 10%;
+    border-radius: 10px 100px / 120px;
+    background: rgb(222, 210, 7);
+    background: radial-gradient(circle, rgba(222, 210, 7, 1) 0%, rgba(70, 246, 113, 1) 33%, rgba(14, 200, 223, 1) 74%, rgba(0, 255, 185, 1) 100%);
+}
